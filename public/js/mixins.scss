@@ -1,0 +1,19 @@
+//transform px to rem;
+$designWidth:750;
+@function px2rem( $px) {
+    //320*50/750/20
+    @return $px*750/$designWidth/20 + rem;
+}
+
+%inlineblockP {
+    font-size: 0;
+    letter-spacing: -8px;
+    /*根据不同字体字号或许需要做一定的调整*/
+    word-spacing: -8px;
+}
+
+%inlineblock {
+    display: inline-block;
+    letter-spacing: normal;
+    word-spacing: normal;
+}
